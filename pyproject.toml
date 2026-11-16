@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngb-looming-model"
+version = "3.0.0"
+description = "Connectome-grounded Drosophila looming-detection circuit (NeuroGraphBench modeling release)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scipy>=1.7", "matplotlib>=3.4"]
+
+[tool.setuptools]
+packages = ["ngb_model"]
+
+[tool.setuptools.package-data]
+ngb_model = ["circuit_data.npz"]
